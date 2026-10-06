@@ -98,6 +98,7 @@ engine-path = engines/llama-b11438-bin-win-cuda-13.4-x64
         - [ ] Select model and show list of GGUF quantizations
         - [ ] Download selected model GGUF quantization to ./models folder 
         - [ ] Write Downloaded model to models.ini config with model name and model path
+        - [ ] Remove Downloaded model from ./models folder and models.ini config
     - [ ] Create /settings page - manager and models configuration
         - [ ] manager configuration config.ini, example attached
         - [ ] engine configuration models.ini for llama.cpp engine backend, example attached
