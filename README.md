@@ -42,17 +42,20 @@ Dropdown
 - [x] List release artifacts
 - [x] Filter release artifacts
 - [x] Download and install artifacts to ./engine folder
-- [ ] Organize interface I should have entry Welcome screen which allow select next pages /releases - already developed, /status - engine status DRAM/VRAM, /models - download models from HF, /settings - manager configuration like engine path and engine_config.ini configuration global configs and per model configs
-- [ ]
-- [ ] Create config for project manager_config.ini
-- [ ] Add engine path to config it is our selected engine to spin up later
-- [ ] List Hugging Face GGUF models
-- [ ] Filter/Sort Hugging Face models
-- [ ] Download Hugging Face models to ./models folder 
-- [ ] Add engine configuration for llama.cpp engine in engine_config.ini file
-- [ ] engine_config.ini should be configured from engine llama.cpp cli options and not directly hardcoded
-- [ ] engine_config.ini should allow configure models, I select models from ./models directory and start configuration
-- [ ] engine_config.ini have global config [*] and per model like [community/model-4b] each configuration I should have possibility to configure 
-- [ ] Add possibility to run engine backend llama.cpp server with engine_config.init file
-- [ ] Add possibility to view logs from engine backend
-- [ ] View DRAM/VRAM usage
+- [ ] Interface UI/UX
+    - [ ] Migrate current screen to /releases page
+    - [ ] Create stunning entry Welcome screen
+    - [ ] Create /status - engine status like logs and DRAM/VRAM usage
+        - [ ] Create DRAM/VRAM widget
+        - [ ] Add possibility to view logs from llama.cpp engine backend
+    - [ ] Create /models - download models from HF
+        - [ ] List Hugging Face GGUF models
+        - [ ] Filter/Sort Hugging Face models
+        - [ ] Download Hugging Face models to ./models folder 
+    - [ ] Create /settings - manager configuration manager_config.ini
+        - [ ] manager configuration manager_config.ini
+            - [ ] add engine path to config it is our main llama.cpp engine backend
+        - [ ] engine configuration engine_config.ini for llama.cpp engine backend
+            - global configs [*] 
+            - per model configs like [community/model-4b]
+            - all configs should be directly taked from llama.cpp --help CLI command and not directly hardcoded, because can be changed later in new engine version
