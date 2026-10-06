@@ -15,7 +15,7 @@ bun run index.ts
 This project was created using `bun init` in bun v1.4.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
 
 ## Description
-This project allow manager llama.cpp releases, download and extract
+Llama.cpp manager
 
 ## Interface
 Page
