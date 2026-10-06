@@ -45,9 +45,6 @@ Dropdown
 - [ ] Interface UI/UX
     - [ ] Migrate current screen to /releases page
     - [ ] Create stunning entry Welcome screen
-    - [ ] Create /status page - engine status like logs and DRAM/VRAM usage
-        - [ ] Create DRAM/VRAM widget
-        - [ ] Add possibility to view logs from llama.cpp engine backend
     - [ ] Create /models page - download models from HF
         - [ ] List Hugging Face GGUF models
         - [ ] Filter/Sort Hugging Face models
@@ -59,3 +56,6 @@ Dropdown
             - global configs [*] 
             - per model configs like [community/model-4b]
             - all configs should be directly taked from llama.cpp --help CLI command and not directly hardcoded, because can be changed later in new engine version
+    - [ ] Create /status page - engine status like logs and DRAM/VRAM usage
+        - [ ] Create DRAM/VRAM widget
+        - [ ] Add possibility to view logs from llama.cpp engine backend
