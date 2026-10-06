@@ -80,7 +80,7 @@ mmproj-offload       = 0
 engine-path = engines/llama-b11438-bin-win-cuda-13.4-x64
 ```
 
-## Features
+## TODO
 - [x] List releases
 - [x] Read release description
 - [x] List release artifacts
