@@ -17,6 +17,25 @@ This project was created using `bun init` in bun v1.4.2. [Bun](https://bun.com) 
 ## Description
 This project allow manager llama.cpp releases, download and extract
 
+## Interface
+Page
+-------------------------------
+|
+|
+|          Page Here
+|
+|______________________________
+|> [Input] ____________________
+
+Dropdown
+-------------------------------
+|          Page Here
+|------------------------------
+|/cmd_1
+|/cmd_2    Dropdown Popup
+|______________________________
+|> /cmd [Partially filled]_____
+
 ## Features
 - [x] List releases
 - [x] Read release description
