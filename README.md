@@ -19,22 +19,24 @@ Llama.cpp manager
 
 ## Interface
 Page
--------------------------------
-|
-|
-|          Page Here
-|
-|______________________________
-|> [Input] ____________________
+```
+
+
+          Page Here
+
+______________________________
+> [Input]
+```
 
 Dropdown
--------------------------------
-|          Page Here
-|------------------------------
-|/cmd_1
-|/cmd_2    Dropdown Popup
-|______________________________
-|> /cmd [Partially filled]_____
+```
+          Page Here
+------------------------------
+/cmd_1
+/cmd_2    Dropdown Popup
+______________________________
+> /cmd [Partially filled]
+```
 
 ## models.ini example
 ```
@@ -99,7 +101,7 @@ engine-path = engines/llama-b11438-bin-win-cuda-13.4-x64
     - [ ] Create /settings page - manager and models configuration
         - [ ] manager configuration config.ini, example attached
         - [ ] engine configuration models.ini for llama.cpp engine backend, example attached
-            - all configs should be directly taked from `llama.cpp --help` CLI command and not directly hardcoded, because can be changed later in new engine version
+            - [ ] all configs should be directly taked from `llama.cpp --help` CLI command and not directly hardcoded, because can be changed later in new engine version
     - [ ] Create /status page - engine status like logs and DRAM/VRAM usage
         - [ ] Show selected engine version
         - [ ] Create DRAM/VRAM widget
