@@ -24,7 +24,7 @@ This project allow manager llama.cpp releases, download and extract
 - [x] Filter release artifacts
 - [x] Download and install artifacts to ./engine folder
 - [ ] Create config for project manager_config.ini
-- [ ] Add engine path to config
+- [ ] Add engine path to config it is our selected engine to spin up later
 - [ ] List Hugging Face GGUF models
 - [ ] Filter/Sort Hugging Face models
 - [ ] Download Hugging Face models to ./models folder 
