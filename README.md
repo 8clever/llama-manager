@@ -45,14 +45,14 @@ Dropdown
 - [ ] Interface UI/UX
     - [ ] Migrate current screen to /releases page
     - [ ] Create stunning entry Welcome screen
-    - [ ] Create /status - engine status like logs and DRAM/VRAM usage
+    - [ ] Create /status page - engine status like logs and DRAM/VRAM usage
         - [ ] Create DRAM/VRAM widget
         - [ ] Add possibility to view logs from llama.cpp engine backend
-    - [ ] Create /models - download models from HF
+    - [ ] Create /models page - download models from HF
         - [ ] List Hugging Face GGUF models
         - [ ] Filter/Sort Hugging Face models
         - [ ] Download Hugging Face models to ./models folder 
-    - [ ] Create /settings - manager configuration manager_config.ini
+    - [ ] Create /settings page - manager configuration manager_config.ini
         - [ ] manager configuration manager_config.ini
             - [ ] add engine path to config it is our main llama.cpp engine backend
         - [ ] engine configuration engine_config.ini for llama.cpp engine backend
