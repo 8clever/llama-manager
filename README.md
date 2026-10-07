@@ -14,6 +14,14 @@ Most existing UIs also bundle or hardcode a specific `llama.cpp` version. That q
 
 `llama-manager` separates the UI from the engine and lets you quickly discover, install, and use the `llama.cpp` version you actually need.
 
+## Free Tier Development
+
+This project was intentionally developed using only free-tier AI coding tools as a proof of concept.
+
+The development workflow was constrained to working with a single source file at a time, without access to coding agents or multi-file autonomous workflows. Despite these limitations, the project was built as a functional prototype.
+
+The goal was to demonstrate that AI-assisted development can produce a working proof of concept even under strict free-tier constraints.
+
 ## Development
 
 To install dependencies:
