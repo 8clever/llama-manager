@@ -1,5 +1,11 @@
 # llama-manager
 
+![Hero](https://raw.githubusercontent.com/8clever/llama-manager/refs/heads/main/docs/hero.png)
+
+# Why?
+
+
+
 To install dependencies:
 
 ```bash
