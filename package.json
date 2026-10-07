@@ -1,5 +1,5 @@
 {
-  "name": "llama-mngr-claude",
+  "name": "llama-mngr",
   "module": "index.ts",
   "version": "0.0.2",
   "type": "module",
