@@ -1,4 +1,4 @@
-# llama-mngr-claude
+# llama-manager
 
 To install dependencies:
 
