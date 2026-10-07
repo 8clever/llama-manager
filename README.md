@@ -2,9 +2,19 @@
 
 ![Hero](https://raw.githubusercontent.com/8clever/llama-manager/refs/heads/main/docs/hero.png)
 
-# Why?
+## Description
 
+A lightweight manager for installing, switching, and running different versions of `llama.cpp`, with model management and engine configuration in one place.
 
+## Why
+
+Running `llama.cpp` locally involves more manual work than it should. You need to find the right version, check its changelog, download the correct build, find a compatible model, add it to the engine configuration, and only then start the inference.
+
+Most existing UIs also bundle or hardcode a specific `llama.cpp` version. That quickly becomes outdated when `llama.cpp` can release multiple versions in a single day.
+
+`llama-manager` separates the UI from the engine and lets you quickly discover, install, and use the `llama.cpp` version you actually need.
+
+## Development
 
 To install dependencies:
 
@@ -19,9 +29,6 @@ bun run index.ts
 ```
 
 This project was created using `bun init` in bun v1.4.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
-
-## Description
-Llama.cpp manager
 
 ## Interface
 Page
