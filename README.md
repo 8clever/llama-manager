@@ -88,26 +88,26 @@ engine-path = engines/llama-b11438-bin-win-cuda-13.4-x64
 - [x] List release artifacts
 - [x] Filter release artifacts
 - [x] Download and install artifacts to ./engines folder
-- [ ] Interface UI/UX
-    - [ ] Migrate current screen to /releases page
-    - [ ] Create stunning entry Welcome screen
-    - [ ] Create /models page - download models from HF
-        - [ ] List Hugging Face GGUF models
-        - [ ] Filter Hugging Face models
-        - [ ] Sort Hugging Face models: recently created/recently updated/tranding/most likes/most downloads, default: tranding
-        - [ ] Select model and show list of GGUF quantizations
-        - [ ] Download selected model GGUF quantization to ./models folder 
-        - [ ] Write Downloaded model to models.ini config with model name and model path
-        - [ ] Remove Downloaded model from ./models folder and models.ini config
-    - [ ] Create /settings page - manager and models configuration
-        - [ ] manager configuration config.ini, example attached
-        - [ ] engine configuration models.ini for llama.cpp engine backend, example attached
-            - [ ] all configs should be directly taked from `llama.cpp --help` CLI command and not directly hardcoded, because can be changed later in new engine version
-    - [ ] Create /status page - engine status like logs and DRAM/VRAM usage
-        - [ ] Show selected engine version
-        - [ ] Create DRAM/VRAM widget
-        - [ ] Add possibility to view logs from llama.cpp engine backend if engine spin up in background
-    - [ ] Create /start command - Run `llama.cpp serve --ui-mcp-proxy --models-dir MODELS_DIR_PATH --models-preset MODELS_INI_PATH` in background
-        - [ ] We run engine related with engine path in config.ini
-        - [ ] We do NOT kill engine backend if we close manager
-    - [ ] Create /stop command - kill llama.cpp serve backend
+- [x] Interface UI/UX
+    - [x] Migrate current screen to /releases page
+    - [x] Create stunning entry Welcome screen
+    - [x] Create /models page - download models from HF
+        - [x] List Hugging Face GGUF models
+        - [x] Filter Hugging Face models
+        - [x] Sort Hugging Face models: recently created/recently updated/tranding/most likes/most downloads, default: tranding
+        - [x] Select model and show list of GGUF quantizations
+        - [x] Download selected model GGUF quantization to ./models folder 
+        - [x] Write Downloaded model to models.ini config with model name and model path
+        - [x] Remove Downloaded model from ./models folder and models.ini config
+    - [x] Create /settings page - manager and models configuration
+        - [x] manager configuration config.ini, example attached
+        - [x] engine configuration models.ini for llama.cpp engine backend, example attached
+            - [x] all configs should be directly taked from `llama.cpp --help` CLI command and not directly hardcoded, because can be changed later in new engine version
+    - [x] Create /status page - engine status like logs and DRAM/VRAM usage
+        - [x] Show selected engine version
+        - [x] Create DRAM/VRAM widget
+        - [x] Add possibility to view logs from llama.cpp engine backend if engine spin up in background
+    - [x] Create /start command - Run `llama.cpp serve --ui-mcp-proxy --models-dir MODELS_DIR_PATH --models-preset MODELS_INI_PATH` in background
+        - [x] We run engine related with engine path in config.ini
+        - [x] We do NOT kill engine backend if we close manager
+    - [x] Create /stop command - kill llama.cpp serve backend
