@@ -5,6 +5,7 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "build": "bun build --compile --format=esm --bytecode ./index.ts --outfile dist/llama-manager",
     "start": "bun index"
   },
   "devDependencies": {
