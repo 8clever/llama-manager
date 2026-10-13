@@ -4,7 +4,7 @@
 
 ## Promo Video
 
-![Promo](https://github.com/8clever/llama-manager/raw/refs/heads/main/docs/llama-manager-promo.mp4)
+https://github.com/8clever/llama-manager/raw/refs/heads/main/docs/llama-manager-promo.mp4
 
 ## Description
 
