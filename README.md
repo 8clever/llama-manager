@@ -2,9 +2,6 @@
 
 ![Hero](https://raw.githubusercontent.com/8clever/llama-manager/refs/heads/main/docs/hero.png)
 
-## Promo Video
-https://raw.githubusercontent.com/8clever/llama-manager/main/docs/llama-manager-promo.mp4
-
 ## Description
 
 A lightweight manager for installing, switching, and running different versions of `llama.cpp`, with model management and engine configuration in one place.
