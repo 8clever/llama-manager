@@ -3,7 +3,7 @@
 ![Hero](https://raw.githubusercontent.com/8clever/llama-manager/refs/heads/main/docs/hero.png)
 
 ## Promo Video
-https://raw.githubusercontent.com/8clever/llama-manager/docs/main/llama-manager-promo.mp4
+https://raw.githubusercontent.com/8clever/llama-manager/main/docs/llama-manager-promo.mp4
 
 ## Description
 
