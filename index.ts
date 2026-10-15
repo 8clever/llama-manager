@@ -67,7 +67,6 @@ const CONFIG_INI = resolve(CWD, "config.ini")
 const PAGE_SIZE = 30 // releases per GitHub request
 const KEEP_ARCHIVES = false // keep the .zip/.tar.gz after extraction
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN
-const HF_TOKEN = process.env.HF_TOKEN ?? process.env.HUGGING_FACE_HUB_TOKEN
 const USER_AGENT = "llama-manager"
 const rel = (p: string): string => relative(CWD, p).split(sep).join("/") || "."
 
@@ -381,6 +380,11 @@ const MANAGER_KEYS: CfgKey[] = [
     desc: "Also download the repo's mmproj file when a quant is downloaded",
     choices: () => ["true", "false"],
   },
+  {
+    key: 'HF_TOKEN',
+    def: "",
+    desc: "Hugging Face access token"
+  }
 ]
 
 const cfgGet = (key: string): string => iniGet(iniLoad(CONFIG_INI), "*", key) ?? MANAGER_KEYS.find((k) => k.key === key)?.def ?? ""
@@ -434,10 +438,13 @@ const SORTS: Record<SortKey, { param: string; label: string }> = {
   updated: { param: "lastModified", label: "recently updated" },
 }
 
-const hfHeaders = (): Record<string, string> => ({
-  "User-Agent": USER_AGENT,
-  ...(HF_TOKEN ? { Authorization: `Bearer ${HF_TOKEN}` } : {}),
-})
+const hfHeaders = (): Record<string, string> => {
+  const HF_TOKEN = cfgGet("HF_TOKEN");
+  return {
+    "User-Agent": USER_AGENT,
+    ...(HF_TOKEN ? { Authorization: `Bearer ${HF_TOKEN}` } : {})
+  }
+}
 
 async function hfJson<T>(url: string, signal?: AbortSignal): Promise<{ data: T; next: string | null }> {
   const res = await fetch(url, { headers: hfHeaders(), signal })
@@ -2527,8 +2534,7 @@ function helpContent(): string {
     "",
     "Filtering   type text without a leading / — words are ANDed (e.g. win cuda x64). On /models it searches Hugging Face.",
     `Files       engines → ${rel(ENGINES_DIR)}/<artifact>/ · models → ${rel(modelsDir())}/ · logs → ${rel(LOG_FILE)} · presets → ${rel(modelsIniPath())}`,
-    GITHUB_TOKEN ? "GitHub      authenticated (GITHUB_TOKEN)" : "GitHub      anonymous, 60 requests/hour — set GITHUB_TOKEN to lift the limit",
-    HF_TOKEN ? "Hugging Face authenticated (HF_TOKEN)" : "Hugging Face anonymous — set HF_TOKEN for gated repos",
+    GITHUB_TOKEN ? "GitHub      authenticated (GITHUB_TOKEN)" : "GitHub      anonymous, 60 requests/hour — set GITHUB_TOKEN to lift the limit"
   ].join("\n")
 }
 
