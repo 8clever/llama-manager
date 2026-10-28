@@ -14,7 +14,19 @@ Most existing UIs also bundle or hardcode a specific `llama.cpp` version. That q
 
 `llama-manager` separates the UI from the engine and lets you quickly discover, install, and use the `llama.cpp` version you actually need.
 
-## Free Tier Development
+## How to
+
+- Download llama-manager binary from [releases](https://github.com/8clever/llama-manager/releases)
+- Unpack binary and place in comfortable folder like `llm`
+- Run binary
+- Download release from `Releases` page, like `b11946/llama-b11946-bin-win-cuda-13.4-x64.zip` and optional `DLLs` `b11946/cudart-llama-bin-win-cuda-13.4-x64.zip` place `DLLs` manually in root folder with llama-manager cli binary
+- Download model from `Models` page
+- Select `Start Server`
+
+And it is, server should be runned and allow you to run your server. 
+For Windows `llama.cpp` can require runtime `VCRUNTIME140.dll` for `x64` you can install it from here `https://aka.ms/vc14/vc_redist.x64.exe`
+
+## Free Tier Developmen
 
 This project was intentionally developed using only free-tier AI coding tools as a proof of concept.
 
