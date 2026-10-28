@@ -23,8 +23,8 @@ Most existing UIs also bundle or hardcode a specific `llama.cpp` version. That q
 - Download model from `Models` page
 - Select `Start Server`
 
-And it is, server should be runned and allow you to run your server. 
-For Windows `llama.cpp` can require runtime `VCRUNTIME140.dll` for `x64` you can install it from here `https://aka.ms/vc14/vc_redist.x64.exe`
+And it is, server should be runned and allow you to run your local models. 
+For Windows `llama.cpp` can require runtime `VCRUNTIME140.dll` for `x64` you can install it from here https://aka.ms/vc14/vc_redist.x64.exe
 
 ## Free Tier Developmen
 
